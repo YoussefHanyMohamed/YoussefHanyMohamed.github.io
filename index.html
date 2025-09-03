@@ -3,94 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Youssef Hany Mohamed</title>
+  <title>Youssef Hany - Portfolio</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- My Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-gradient-to-b from-blue-50 to-indigo-50 text-slate-800 min-h-screen">
 
   <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-blue-200">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-bold text-lg gradient-text">Youssef<span class="text-blue-400">.dev</span></a>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-blue-600 transition">About</a>
+        <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+        <a href="#certifications" class="hover:text-blue-600 transition">Certifications</a>
+        <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+        <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-  <!-- Home Section -->
-  <section id="home">
-    <h1>Hello, I'm <span class="highlight">Youssef Hany Mohamed</span></h1>
-    <p>Undergraduate Computer & Communications Engineering Student | Cybersecurity & Networking Enthusiast</p>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Computer and Communications Engineering student with a strong interest in Cybersecurity and Networking.  
-      Continuously enhancing knowledge, technical expertise, and staying updated with the latest technologies.  
-      Passionate about continuous learning, problem-solving, creativity, teamwork, adaptability, and leadership.
+  <!-- Hero Section -->
+  <section id="home" class="max-w-6xl mx-auto px-4 pt-16 pb-24 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold gradient-text">Hello, I'm Youssef Hany Mohamed</h1>
+    <p class="mt-4 text-lg md:text-xl text-slate-600">
+      Computer & Communications Engineering Student | Cybersecurity & Networking Enthusiast
     </p>
+    <div class="mt-6 flex flex-wrap justify-center gap-3">
+      <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700">Sherbin, Ad Daqahliyah, Egypt</span>
+      <a href="mailto:Youssefhany19605@gmail.com" class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200 transition">📧 Email</a>
+      <a href="tel:+201028041608" class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200 transition">📞 +201028041608</a>
+      <a href="https://www.linkedin.com/in/youssef-hany-mohamed" target="_blank" class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200 transition">💼 LinkedIn</a>
+    </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Telecom Egypt - Internship Trainee</h3>
-      <p><strong>July 2025 - August 2025</strong> | Talkha, Ad Daqahliyah, Egypt</p>
-      <ul>
-        <li>90 hours of training on Optical Fiber, SDH/DWDM, and Mobile Communication.</li>
-        <li>Performed fiber optic splicing & measurements with 95%+ accuracy.</li>
-        <li>Applied SDH and DWDM knowledge achieving 20% fewer lab errors.</li>
-        <li>Worked on Mobile Communication systems with 90% troubleshooting success.</li>
+  <!-- About -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-semibold gradient-text mb-4">About Me</h2>
+      <p class="text-slate-700 leading-relaxed">
+        Computer and Communications Engineering student with strong interest in Cybersecurity and Networking.
+        Continuously enhancing technical expertise and staying updated with the latest technologies.
+        Passionate about continuous learning, problem solving, creativity, teamwork, adaptability, time management, attention to detail and leadership.
+      </p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold gradient-text mb-6 text-center">Experience / Training</h2>
+      <div class="card-hover rounded-xl border border-blue-200 p-6 bg-white">
+        <h3 class="font-semibold text-blue-700">Telecom Egypt - Internship Trainee</h3>
+        <p class="text-sm text-slate-600">July 2025 - August 2025 | Talkha, Ad Daqahliyah, Egypt</p>
+        <ul class="list-disc pl-5 mt-3 text-slate-700 space-y-1 text-sm">
+          <li>90 hours of intensive training on Optical Fiber, SDH/DWDM, and Mobile Communication.</li>
+          <li>Performed fiber optic splicing with 95%+ accuracy, reducing errors by 10%.</li>
+          <li>Applied SDH & DWDM knowledge, reducing lab test errors by 20%.</li>
+          <li>Worked on Mobile Communication systems with 90% troubleshooting success.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold gradient-text mb-6 text-center">Certifications</h2>
+      <ul class="grid sm:grid-cols-2 gap-4 text-slate-700 text-sm">
+        <li class="card-hover p-4 rounded-xl border bg-blue-50">Protect Systems from Penetrations</li>
+        <li class="card-hover p-4 rounded-xl border bg-blue-50">Cyber Security Basics</li>
+        <li class="card-hover p-4 rounded-xl border bg-blue-50">Ethical Hacking</li>
+        <li class="card-hover p-4 rounded-xl border bg-blue-50">Introduction to Cybersecurity</li>
+        <li class="card-hover p-4 rounded-xl border bg-blue-50">Introduction to Network Security</li>
+        <li class="card-hover p-4 rounded-xl border bg-blue-50">Computer Network Fundamentals</li>
+        <li class="card-hover p-4 rounded-xl border bg-blue-50">Implementation of Network Fundamentals</li>
+        <li class="card-hover p-4 rounded-xl border bg-blue-50">Python Programming Basics</li>
+        <li class="card-hover p-4 rounded-xl border bg-blue-50">Basics of AI Applications</li>
+        <li class="card-hover p-4 rounded-xl border bg-blue-50">Embedded System</li>
       </ul>
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section id="education">
-    <h2>Education</h2>
-    <div class="card">
-      <h3>Mansoura National University</h3>
-      <p><strong>Bachelor of Engineering (Communications & Computer Engineering)</strong><br>
-      October 2023 - August 2028</p>
+  <!-- Skills -->
+  <section id="skills" class="py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold gradient-text mb-6 text-center">Skills</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-5 rounded-xl border bg-white card-hover">
+          <h3 class="font-semibold text-blue-700">Technical Skills</h3>
+          <ul class="list-disc pl-5 mt-2 text-sm text-slate-700 space-y-1">
+            <li>Telecommunications</li>
+            <li>Optical Fiber</li>
+            <li>Networking</li>
+            <li>Cybersecurity</li>
+            <li>Mobile Communications</li>
+            <li>VMware</li>
+            <li>Kali Linux</li>
+            <li>AutoCAD</li>
+            <li>Arduino</li>
+          </ul>
+        </div>
+        <div class="p-5 rounded-xl border bg-white card-hover">
+          <h3 class="font-semibold text-blue-700">Soft Skills</h3>
+          <ul class="list-disc pl-5 mt-2 text-sm text-slate-700 space-y-1">
+            <li>Teamwork</li>
+            <li>Problem Solving</li>
+            <li>Time Management</li>
+            <li>Leadership</li>
+            <li>Adaptability</li>
+            <li>Presentation Skills</li>
+            <li>Attention to Detail</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Telecommunications</li>
-      <li>Microsoft Office</li>
-      <li>Optical Fiber</li>
-    </ul>
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-semibold gradient-text mb-6">Contact Me</h2>
+      <p class="text-slate-700">📞 <strong>+201028041608</strong></p>
+      <p class="text-slate-700">📧 <a href="mailto:Youssefhany19605@gmail.com">Youssefhany19605@gmail.com</a></p>
+      <p class="text-slate-700">💼 <a href="https://www.linkedin.com/in/youssef-hany-mohamed" target="_blank">LinkedIn Profile</a></p>
+    </div>
   </section>
 
-  <!-- Certifications Section -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Embedded System</li>
-      <li>Protect Systems from Penetrations</li>
-      <li>Cyber Security Basics</li>
-      <li>Introduction to Network Security</li>
-      <li>Python Programming Basics</li>
-    </ul>
-  </section>
+  <!-- Footer -->
+  <footer class="border-t border-blue-200 py-6 bg-blue-50 text-center text-sm text-blue-600">
+    © 2025 Youssef Hany Mohamed. All rights reserved.
+  </footer>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>📞 01028041608</p>
-    <p>📧 <a href="mailto:youssefhany19605@gmail.com">youssefhany19605@gmail.com</a></p>
-    <p>💼 <a href="https://www.linkedin.com/in/youssef-hany-mohamed" target="_blank">LinkedIn</a></p>
-  </section>
-
+  <script> lucide.createIcons(); </script>
 </body>
 </html>
